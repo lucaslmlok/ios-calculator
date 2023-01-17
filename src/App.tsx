@@ -18,9 +18,11 @@ function App() {
         <meta name="theme-color" content="#000000" />
         <title>iOS Calculator</title>
       </Helmet>
-      <div className="bg-black min-h-screen text-white container flex flex-col pb-24">
-        <Display className="flex-1" />
-        <Keyboard />
+      <div className="bg-black min-h-screen text-white pb-24">
+        <div className="max-w-md h-full container flex flex-col justify-center">
+          <Display className="flex-1" />
+          <Keyboard />
+        </div>
       </div>
     </>
   );

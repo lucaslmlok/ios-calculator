@@ -11,7 +11,7 @@ const Display: FC<Props> = ({ className }) => {
   const { display } = useCal();
 
   return (
-    <div className={clsx('flex items-end px-2', className)}>
+    <div className={clsx('flex items-end min-h-[12rem] px-2', className)}>
       <Textfit mode="single" max={80} className="w-full text-right">
         {display.slice(0, 10)}
       </Textfit>
